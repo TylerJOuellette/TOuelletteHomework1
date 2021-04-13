@@ -21,6 +21,19 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/deploy\/img\/hero\/hero.png" : {
+      "ft" : 32768,
+      "iS" : 2839001,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/hero\/hero.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -46,6 +59,70 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/design\/structure-tags.sketch",
+      "oF" : 0
+    },
+    "\/dev\/content\/ArticleSection.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/ArticleSection.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/hero.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/content\/hero.html",
+      "oF" : 1
+    },
+    "\/dev\/content\/hero2.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/hero2.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/herostripeleft.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/herostripeleft.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/herostriperight.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/herostriperight.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/LiftLeft" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/content\/LiftLeft",
+      "oF" : 0
+    },
+    "\/dev\/content\/LiftRight" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/content\/LiftRight",
+      "oF" : 0
+    },
+    "\/dev\/content\/search.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/search.html",
       "oF" : 0
     },
     "\/dev\/global\/footer.kit" : {
@@ -252,6 +329,25 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/README.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/README.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
     }
   },
   "hooks" : [
