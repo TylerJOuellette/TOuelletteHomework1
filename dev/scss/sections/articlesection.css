@@ -1,0 +1,11 @@
+/* =============
+    ArticleSection
+============= */
+#articlesection {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". articlesection .";
+}
+#articlesection > div {
+  grid-area: articlesection;
+}

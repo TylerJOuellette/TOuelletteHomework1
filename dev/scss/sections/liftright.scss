@@ -1,12 +1,12 @@
 /* =============
-    Footer
+    Lift Right
 ============= */
-footer{
+#liftright{
     display: grid;
     grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". footer .";
+    grid-template-areas: ". liftright .";
 
     >div{
-        grid-area: footer;
+        grid-area: liftright;
     }
 }

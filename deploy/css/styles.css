@@ -365,18 +365,8 @@ ul li {
   list-style: none;
 }
 
-.container-grid {
-  display: grid;
-  grid-template-columns: auto 1200px auto;
-  grid-template-areas: ". grid-content .";
-  min-height: 100vh;
-}
-.container-grid .grid-content {
-  grid-area: grid-content;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+img {
+  width: 100%;
 }
 
 /* =============
@@ -439,3 +429,83 @@ header > div {
 /* =============
     Footer
 ============= */
+footer {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". footer .";
+}
+footer > div {
+  grid-area: footer;
+}
+
+/* =============
+    Search
+============= */
+#search {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". search .";
+}
+#search > div {
+  grid-area: search;
+}
+
+/* =============
+    ArticleSection
+============= */
+#articlesection {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". articlesection .";
+}
+#articlesection > div {
+  grid-area: articlesection;
+}
+
+/* =============
+    Lift Left
+============= */
+#liftleft {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". liftleft .";
+}
+#liftleft > div {
+  grid-area: liftleft;
+}
+
+/* =============
+    Lift Right
+============= */
+#liftright {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". liftright .";
+}
+#liftright > div {
+  grid-area: liftright;
+}
+
+/* =============
+    Hero Stripe Left
+============= */
+#herostripeleft {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". herostripeleft .";
+}
+#herostripeleft > div {
+  grid-area: herostripeleft;
+}
+
+/* =============
+    Hero Stripe Right
+============= */
+#herostriperight {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". herostriperight .";
+}
+#herostriperight > div {
+  grid-area: herostriperight;
+}

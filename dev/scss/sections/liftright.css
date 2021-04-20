@@ -1,0 +1,11 @@
+/* =============
+    Lift Right
+============= */
+#liftright {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". liftright .";
+}
+#liftright > div {
+  grid-area: liftright;
+}

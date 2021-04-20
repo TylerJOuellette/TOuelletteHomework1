@@ -1,0 +1,12 @@
+/* =============
+    Hero Stripe Left
+============= */
+#herostripeleft{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". herostripeleft .";
+
+    >div{
+        grid-area: herostripeleft;
+    }
+}
