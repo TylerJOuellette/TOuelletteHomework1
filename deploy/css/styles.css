@@ -509,3 +509,15 @@ footer > div {
 #herostriperight > div {
   grid-area: herostriperight;
 }
+
+/* =============
+    Icons
+============= */
+#icons {
+  display: grid;
+  grid-template-columns: 16px 25% 25% 25% 25% 16px;
+  grid-template-areas: ". icons .";
+}
+#icons > div {
+  grid-area: icons;
+}
