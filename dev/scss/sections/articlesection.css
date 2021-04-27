@@ -1,11 +1,60 @@
 /* =============
     ArticleSection
 ============= */
-#articlesection {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". articlesection .";
+#articlesection{
+ 
+  >div{
+    display: grid;
+      grid-template-columns: 16px auto 16px;
+      grid-template-areas: ". articlesection .";
+    ul{
+      gap: 16px;
+      display: grid;
+      grid-area: articlesection;
+      grid-template-areas: 
+      "a1"
+      "a2"
+      "a3"
+      "a4"
+      "a5";
+      
+      @include md{
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        grid-template-areas: 
+        "a1 a2 a3"
+        "a4 a5";
+      }
+      
+      li{
+        #a1{
+          grid-area: a1;
+        }
+        
+        #a2{
+          grid-area: a2;
+        }
+        
+        #a3{
+          grid-area: a3;
+        }
+        
+        #a4{
+          grid-area: a4;
+        }
+        
+        #a4{
+          grid-area: a4;
+        }
+  }
+
+ 
+    
+  }
+  
+  
+  
+  }
+  
 }
-#articlesection > div {
-  grid-area: articlesection;
-}
+
+

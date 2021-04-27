@@ -475,6 +475,34 @@ footer > div {
   grid-area: articlesection-content;
 }
 
+ul {
+  gap: 16px;
+  display: grid;
+  grid-area: articlesection;
+  grid-template-areas: "types" "a1" "a2" "a3" "a4" "a5";
+}
+@media (min-width: 768px) {
+  ul {
+    grid-template-columns: 50% auto;
+    grid-template-areas: "types" "a1 a2" "a3 a4" "a5";
+  }
+}
+ul li #a1 {
+  grid-area: a1;
+}
+ul li #a2 {
+  grid-area: a2;
+}
+ul li #a3 {
+  grid-area: a3;
+}
+ul li #a4 {
+  grid-area: a4;
+}
+ul li #a4 {
+  grid-area: a4;
+}
+
 /* =============
     Lift Left
 ============= */
