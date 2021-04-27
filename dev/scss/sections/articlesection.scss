@@ -13,6 +13,10 @@ ul{
             grid-template-columns: 16px auto 16px;
             grid-template-areas: ". articlesection .";
 
+            @include xl{
+                grid-template-columns: auto 60% auto;
+            }
+
             >div{
                 grid-area: articlesection-content;
             }
@@ -20,13 +24,13 @@ ul{
     }
 }
 }
->div #articlesection{}
+
     ul{
       gap: 16px;
       display: grid;
       grid-area: articlesection;
       grid-template-areas: 
-      "types"
+      
       "a1"
       "a2"
       "a3"
@@ -42,6 +46,14 @@ ul{
         "a5";
       }
       
+      @include lg{
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        grid-template-areas: 
+        "types"
+        "a1 a2 a3"
+        "a4 a5";
+      }
+
       li{
         #a1{
           grid-area: a1;

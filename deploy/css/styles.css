@@ -444,8 +444,38 @@ footer {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
 }
+@media (min-width: 1200px) {
+  footer {
+    grid-template-columns: auto 60% auto;
+  }
+}
 footer > div {
   grid-area: footer;
+}
+
+ul {
+  grid-template-areas: "locations" "news" "icons";
+}
+@media (min-width: 768px) {
+  ul {
+    grid-template-columns: 50% auto;
+    grid-template-areas: "locations news" "          icons";
+  }
+}
+@media (min-width: 992px) {
+  ul {
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-areas: "locations news icons";
+  }
+}
+ul li #locations {
+  grid-area: locations;
+}
+ul li #news {
+  grid-area: news;
+}
+ul li #icons {
+  grid-area: icons;
 }
 
 /* =============
@@ -455,6 +485,11 @@ footer > div {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". search .";
+}
+@media (min-width: 1200px) {
+  #search {
+    grid-template-columns: auto 60% auto;
+  }
 }
 #search > div {
   grid-area: search;
@@ -471,6 +506,11 @@ footer > div {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". articlesection .";
 }
+@media (min-width: 1200px) {
+  #articlesection ul li section {
+    grid-template-columns: auto 60% auto;
+  }
+}
 #articlesection ul li section > div {
   grid-area: articlesection-content;
 }
@@ -479,12 +519,18 @@ ul {
   gap: 16px;
   display: grid;
   grid-area: articlesection;
-  grid-template-areas: "types" "a1" "a2" "a3" "a4" "a5";
+  grid-template-areas: "a1" "a2" "a3" "a4" "a5";
 }
 @media (min-width: 768px) {
   ul {
     grid-template-columns: 50% auto;
     grid-template-areas: "types" "a1 a2" "a3 a4" "a5";
+  }
+}
+@media (min-width: 992px) {
+  ul {
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-areas: "types" "a1 a2 a3" "a4 a5";
   }
 }
 ul li #a1 {
@@ -511,6 +557,11 @@ ul li #a4 {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". liftleft .";
 }
+@media (min-width: 1200px) {
+  #liftleft {
+    grid-template-columns: auto 60% auto;
+  }
+}
 #liftleft > div {
   grid-area: liftleft;
 }
@@ -522,6 +573,11 @@ ul li #a4 {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". liftright .";
+}
+@media (min-width: 1200px) {
+  #liftright {
+    grid-template-columns: auto 60% auto;
+  }
 }
 #liftright > div {
   grid-area: liftright;
@@ -535,6 +591,11 @@ ul li #a4 {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". herostripeleft .";
 }
+@media (min-width: 1200px) {
+  #herostripeleft {
+    grid-template-columns: auto 60% auto;
+  }
+}
 #herostripeleft > div {
   grid-area: herostripeleft;
 }
@@ -546,6 +607,11 @@ ul li #a4 {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". herostriperight .";
+}
+@media (min-width: 1200px) {
+  #herostriperight {
+    grid-template-columns: auto 60% auto;
+  }
 }
 #herostriperight > div {
   grid-area: herostriperight;
