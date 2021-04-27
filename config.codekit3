@@ -545,6 +545,18 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/dev\/scss\/sections\/hero.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/scss\/sections\/hero-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/dev\/scss\/sections\/hero.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -554,6 +566,20 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/scss\/sections\/hero.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/hero2.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/hero2.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,

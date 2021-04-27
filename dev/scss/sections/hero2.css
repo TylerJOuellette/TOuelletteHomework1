@@ -1,0 +1,12 @@
+/* =============
+    Hero 2
+============= */
+#hero2 ul {
+  display: grid;
+}
+#hero2 ul li img {
+  width: 100%;
+}
+#hero2 ul #h2-3 {
+  display: none;
+}

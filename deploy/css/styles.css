@@ -379,10 +379,6 @@ ul li {
   align-items: center;
 }
 
-img {
-  width: 100%;
-}
-
 /* =============
     Typography
 ============= */
@@ -467,31 +463,16 @@ footer > div {
 /* =============
     ArticleSection
 ============= */
-#articlesection > div {
+#articlesection ul li img {
+  width: 100%;
+}
+#articlesection ul li section {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". articlesection .";
 }
-#articlesection > div ul {
-  gap: 16px;
-  display: grid;
-  grid-area: articlesection;
-  grid-template-areas: "a1" "a2" "a3" "a4" "a5";
-}
-#articlesection > div ul #a1 {
-  grid-area: a1;
-}
-#articlesection > div ul #a2 {
-  grid-area: a2;
-}
-#articlesection > div ul #a3 {
-  grid-area: a3;
-}
-#articlesection > div ul #a4 {
-  grid-area: a4;
-}
-#articlesection > div ul #a5 {
-  grid-area: a5;
+#articlesection ul li section > div {
+  grid-area: articlesection-content;
 }
 
 /* =============
@@ -554,6 +535,22 @@ footer > div {
   grid-area: icons;
 }
 
+/* =============
+    Hero
+============= */
 #hero img {
   width: 100%;
+}
+
+/* =============
+    Hero 2
+============= */
+#hero2 ul {
+  display: grid;
+}
+#hero2 ul li img {
+  width: 100%;
+}
+#hero2 ul #h2-3 {
+  display: none;
 }
