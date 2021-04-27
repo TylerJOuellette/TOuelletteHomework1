@@ -30,29 +30,42 @@
     
         <div>
             <h2>Search our games</h2>
-            
+            <form action="POST">
+                <input type="text" placeholder="Search our games">
+                <button><i class="fas fa-search"></i></button>
+            </form>
         </div>
         
     </section>
 
-    <section>
-        <img src="img/hero/hero.jpg" alt="people at arcade">
+    <section id="hero">
+        
+        <div>
+            <img src="img/hero/hero.jpg" alt="people at arcade">
+        </div>
+    
     </section>
 
      <section id="herostriperight">
      
          <div>
-             <p>Location: Manchester, CT, USA</p>
-             <p>Region: Northern North America</p>
+             <a href="#">
+                 <p>Location: Manchester, CT, USA</p>
+                 <p>Region: Northern North America</p>
+             </a>
+             
          </div>
         
      </section>
 
      <section id="herostripeleft">
      
+         
          <div>
-             <h4>What to play?</h4>
-             <p>Click here for our game catalogue</p>
+             <a href="#">
+                 <h4>What to play?</h4>
+                 <p>Click here for our game catalogue</p>
+             </a>  
          </div>
          
      </section>
@@ -76,46 +89,67 @@
       </section>
 
 
-     <section>
-     <img src="img/hero2/hero1.jpg" alt="ice ball">
-     <img src="img/hero2/hero2.jpg" alt="lane master">
-     <img src="img/hero2/hero3.jpg" alt="fight stick">
+     <section id="hero2">
+         
+     <div>
+         <img src="img/hero2/hero1.jpg" alt="ice ball">
+         <img src="img/hero2/hero2.jpg" alt="lane master">
+         <img src="img/hero2/hero3.jpg" alt="fight stick">
+     </div>
+        
      
      </section>
 
     <section id="articlesection">
        
         <div>
-            <h2>Types of Games We Have</h2>
-            <article>
-                <img src="img/articles/pinball.jpg" alt="pinball machine">
-                <h3>Pinball Machines</h3>
-                <p>We have pinball machines from all across the world, each of which has many incredible themes and facets unique to that respective cabinet.</p>
-            </article>
-        
-            <article>
-                <img src="img/articles/classic.jpg" alt="classic arcade cabinets">
-                <h3>Classic Arcade Cabinets</h3>
-                <p>It’s hard to go wrong with the classics! Here, you will be able to experience many old games in their original form: an arcade cabinet!</p>
-            </article>
-        
-            <article>
-                <img src="img/articles/crane.jpg" alt="crane machines">
-                <h3>Crane & Skill Games</h3>
-                <p>Want to test your skills and potentially get your hands on some incredible items and merchandise? Try your hand at the crane and skill machines!</p>
-            </article>
-        
-            <article>
-                <img src="img/articles/story.jpg" alt="Story Aracde cabinets">
-                <h3>Story-Based Games</h3>
-                <p>Come to the arcade often? These might be the games for you! By storing your information on a card, you can continue where you left off your previous visit!</p>
-            </article>
-        
-            <article>
-                <img src="img/articles/pvp.jpg" alt="two kids playing against each other">
-                <h3>Player vs Player Games</h3>
-                <p>Satisfy your competitive desires by facing off against your friends in one of our PvP machines!</p>
-            </article>
+            <ul>
+    
+                <li id="a1">
+                    <h2>Types of Games We Have</h2>
+                    <article>
+                        <img src="img/articles/pinball.jpg" alt="pinball machine">
+                        <h3>Pinball Machines</h3>
+                        <p>We have pinball machines from all across the world, each of which has many incredible themes and facets unique to that respective cabinet.</p>
+                    </article>
+                </li>
+    
+               <li id="a2">
+                <article>
+                    <img src="img/articles/classic.jpg" alt="classic arcade cabinets">
+                    <h3>Classic Arcade Cabinets</h3>
+                    <p>It’s hard to go wrong with the classics! Here, you will be able to experience many old games in their original form: an arcade cabinet!</p>
+                </article>
+               </li>
+               
+               <li id="a3">
+                <article>
+                    <img src="img/articles/crane.jpg" alt="crane machines">
+                    <h3>Crane & Skill Games</h3>
+                    <p>Want to test your skills and potentially get your hands on some incredible items and merchandise? Try your hand at the crane and skill machines!</p>
+                </article>
+               </li>
+    
+               <li id="a4">
+                <article>
+                    <img src="img/articles/story.jpg" alt="Story Aracde cabinets">
+                    <h3>Story-Based Games</h3>
+                    <p>Come to the arcade often? These might be the games for you! By storing your information on a card, you can continue where you left off your previous visit!</p>
+                </article>
+               </li>
+               
+               <li id="a5">
+                <article>
+                    <img src="img/articles/pvp.jpg" alt="two kids playing against each other">
+                    <h3>Player vs Player Games</h3>
+                    <p>Satisfy your competitive desires by facing off against your friends in one of our PvP machines!</p>
+                </article>
+               </li>
+            
+               
+    
+            </ul>
+            
         </div>
        
     
@@ -136,6 +170,10 @@
             <p>(902)883-7450</p>
             
             <h4>Newsletter Sign Up</h4>
+            <form action="POST">
+                <input type="text" placeholder="Email address">
+                <button><i class="fas fa-paper-plane"></i></button>
+            </form>
         
             <h4>Follow us</h4>
             <div id="icons">

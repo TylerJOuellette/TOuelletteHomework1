@@ -365,6 +365,20 @@ ul li {
   list-style: none;
 }
 
+.container-grid {
+  display: grid;
+  grid-template-columns: auto 1200px auto;
+  grid-template-areas: ". grid-content .";
+  min-height: 100vh;
+}
+.container-grid .grid-content {
+  grid-area: grid-content;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 img {
   width: 100%;
 }
@@ -453,13 +467,31 @@ footer > div {
 /* =============
     ArticleSection
 ============= */
-#articlesection {
+#articlesection > div {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". articlesection .";
 }
-#articlesection > div {
+#articlesection > div ul {
+  gap: 16px;
+  display: grid;
   grid-area: articlesection;
+  grid-template-areas: "a1" "a2" "a3" "a4" "a5";
+}
+#articlesection > div ul #a1 {
+  grid-area: a1;
+}
+#articlesection > div ul #a2 {
+  grid-area: a2;
+}
+#articlesection > div ul #a3 {
+  grid-area: a3;
+}
+#articlesection > div ul #a4 {
+  grid-area: a4;
+}
+#articlesection > div ul #a5 {
+  grid-area: a5;
 }
 
 /* =============
@@ -520,4 +552,8 @@ footer > div {
 }
 #icons > div {
   grid-area: icons;
+}
+
+#hero img {
+  width: 100%;
 }

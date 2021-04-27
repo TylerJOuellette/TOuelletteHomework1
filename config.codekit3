@@ -264,6 +264,14 @@
       "oAP" : "\/dev\/content\/ArticleSection.html",
       "oF" : 0
     },
+    "\/dev\/content\/hero.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/content\/hero.html",
+      "oF" : 0
+    },
     "\/dev\/content\/hero.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -537,6 +545,20 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/dev\/scss\/sections\/hero.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/hero.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/dev\/scss\/sections\/herostripeleft.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -588,6 +610,18 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/dev\/scss\/sections\/icons.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/scss\/sections\/icons-min.css",
+      "oF" : 0,
+      "pg" : 0
     },
     "\/dev\/scss\/sections\/icons.scss" : {
       "aP" : 0,
