@@ -605,32 +605,37 @@ footer > div #news button {
 /* =============
     Lift
 ============= */
-#liftleft {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". liftleft .";
-}
-@media (min-width: 1200px) {
-  #liftleft {
-    grid-template-columns: auto 60% auto;
+@media (min-width: 768px) {
+  #lift {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". lift .";
   }
 }
-#liftleft > div {
-  grid-area: liftleft;
-}
-
-#liftright {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". liftright .";
-}
 @media (min-width: 1200px) {
-  #liftright {
-    grid-template-columns: auto 60% auto;
+  #lift {
+    grid-template-columns: auto 1000px auto;
   }
 }
-#liftright > div {
-  grid-area: liftright;
+#lift ul {
+  display: grid;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  #lift ul {
+    grid-template-columns: 50% auto;
+    gap: 24px;
+    grid-area: lift;
+  }
+}
+#lift ul li {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". lift-content .";
+  background-color: #170149;
+}
+#lift ul li > div {
+  grid-area: lift-content;
 }
 
 /* =============
@@ -651,10 +656,26 @@ footer > div #news button {
 #hero img {
   width: 100%;
 }
+@media (min-width: 768px) {
+  #hero ul {
+    display: grid;
+    grid-template-columns: 40% auto;
+  }
+}
+@media (min-width: 992px) {
+  #hero ul {
+    grid-template-columns: 50% auto;
+  }
+}
 #hero ul li {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero-content .";
+}
+@media (min-width: 1200px) {
+  #hero ul li {
+    grid-template-columns: auto 480px 16px;
+  }
 }
 #hero ul li a {
   grid-area: hero-content;
@@ -664,6 +685,11 @@ footer > div #news button {
 }
 #hero ul #hero-sub-2 {
   background-color: #9B75F9;
+}
+@media (min-width: 1200px) {
+  #hero ul #hero-sub-2 {
+    grid-template-columns: 16px 480px auto;
+  }
 }
 
 /* =============
