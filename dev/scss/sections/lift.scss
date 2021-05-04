@@ -32,6 +32,13 @@
 
             >div{
                 grid-area: lift-content;
+                h3 {
+                    color: $white;
+                }
+                button {
+                    background-color:$discord;
+                    color: $white;
+                }
             }
         }
     }

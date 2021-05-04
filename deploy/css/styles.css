@@ -637,6 +637,13 @@ footer > div #news button {
 #lift ul li > div {
   grid-area: lift-content;
 }
+#lift ul li > div h3 {
+  color: #fff;
+}
+#lift ul li > div button {
+  background-color: #535EEB;
+  color: #fff;
+}
 
 /* =============
     Icons
@@ -683,8 +690,26 @@ footer > div #news button {
 #hero ul #hero-sub-1 {
   background-color: #7C49FA;
 }
+#hero ul #hero-sub-1 p {
+  color: #fff;
+}
+#hero ul #hero-sub-1 h4 {
+  color: #fff;
+}
+#hero ul #hero-sub-1 i {
+  color: #fff;
+}
 #hero ul #hero-sub-2 {
   background-color: #9B75F9;
+}
+#hero ul #hero-sub-2 p {
+  color: #fff;
+}
+#hero ul #hero-sub-2 h4 {
+  color: #fff;
+}
+#hero ul #hero-sub-2 i {
+  color: #fff;
 }
 @media (min-width: 1200px) {
   #hero ul #hero-sub-2 {
@@ -698,9 +723,41 @@ footer > div #news button {
 #hero2 ul {
   display: grid;
 }
+@media (min-width: 768px) {
+  #hero2 ul {
+    grid-template-columns: 50% auto;
+  }
+}
+@media (min-width: 992px) {
+  #hero2 ul {
+    grid-template-columns: 60% auto;
+  }
+}
+@media (min-width: 1200px) {
+  #hero2 ul {
+    grid-template-columns: 65% auto;
+    grid-template-areas: "h2-1 h2-2" "h2-1 h2-3";
+  }
+}
 #hero2 ul li img {
   width: 100%;
 }
+@media (min-width: 1200px) {
+  #hero2 ul #h2-1 {
+    grid-area: h2-1;
+  }
+}
+@media (min-width: 1200px) {
+  #hero2 ul #h2-2 {
+    grid-area: h2-2;
+  }
+}
 #hero2 ul #h2-3 {
   display: none;
+}
+@media (min-width: 1200px) {
+  #hero2 ul #h2-3 {
+    display: list-item;
+    grid-area: h2-3;
+  }
 }

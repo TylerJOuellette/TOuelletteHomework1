@@ -34,10 +34,29 @@
 
         #hero-sub-1{
             background-color: $spurple;
+            p{
+                color: $white;
+            }
+            h4{
+                color: $white;
+            }
+            i{
+                color: $white;
+            }
+            
         }
 
         #hero-sub-2{
             background-color: $purple;
+            p{
+                color: $white;
+            }
+            h4{
+                color: $white;
+            }
+            i{
+                color: $white;
+            }
             @include xl{
                 grid-template-columns: 16px 480px auto;
             }
