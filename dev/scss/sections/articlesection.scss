@@ -3,83 +3,106 @@
 ============= */
 #articlesection{
 
-ul{
-    li{
-        img{
-            width: 100%;
+    @include md {
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". articlesection .";
+    }
+
+    @include xl {
+        grid-template-columns: auto 1200px auto;
+    }
+
+    >div {
+
+        @include md {
+            grid-area: articlesection;
         }
-        section{
-            display: grid;
-            grid-template-columns: 16px auto 16px;
-            grid-template-areas: ". articlesection .";
 
-            @include xl{
-                grid-template-columns: auto 60% auto;
-            }
+        ul {
 
-            >div{
-                grid-area: articlesection-content;
-            }
+            #types{
+                @include md {
+                    grid-area: types;
+                }
+              }
+            
+            #a1{
+                @include md {
+                    grid-area: a1;
+                }
+              }
+              
+              #a2{
+                @include md {
+                    grid-area: a2;
+                }
+              }
+              
+              #a3{
+                @include md {
+                    grid-area: a3;
+                }
+              }
+              
+              #a4{
+                @include md {
+                    grid-area: a4;
+                }
+              }
+              
+              #a5{
+                @include md {
+                    grid-area: a5;
+                }
+              }
+
+              @include md {
+                  display: grid;
+                  grid-template-columns: repeat(4, 1fr);
+                  grid-template-areas: 
+                    "types . . ."
+                    "a1 a1 a2 a2"
+                    "a3 a3 a4 a4"
+                    ". a5 a5 .";
+                  gap: 16px;  
+              }
+
+              @include lg {
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-areas:
+                  "types . . . . ."
+                  "a1 a1 a2 a2 a3 a3"
+                  ". a4 a4 a5 a5 .";
+                }
+
+                li {
+                    background-color: $lavendar;
+                        h2 {
+                        background-color: $white;
+                        }
+
+                    img {
+                        width: 100%;
+                    }
+
+                    section {
+                        display: grid;
+                        grid-template-columns: 16px auto 16px;
+                        grid-template-areas: ". articlesection-content .";
+
+                        >div {
+                            grid-area: articlesection-content;
+
+                            button {
+                                background-color:$discord;
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+
+              
         }
     }
 }
-}
-
-    ul{
-      gap: 16px;
-      display: grid;
-      grid-area: articlesection;
-      grid-template-areas: 
-      
-      "a1"
-      "a2"
-      "a3"
-      "a4"
-      "a5";
-      
-      @include md{
-        grid-template-columns: 50% auto;
-        grid-template-areas: 
-        "types"
-        "a1 a2"
-        "a3 a4"
-        "a5";
-      }
-      
-      @include lg{
-        grid-template-columns: 33.3% 33.3% 33.3%;
-        grid-template-areas: 
-        "types"
-        "a1 a2 a3"
-        "a4 a5";
-      }
-
-      li{
-        #a1{
-          grid-area: a1;
-        }
-        
-        #a2{
-          grid-area: a2;
-        }
-        
-        #a3{
-          grid-area: a3;
-        }
-        
-        #a4{
-          grid-area: a4;
-        }
-        
-        #a4{
-          grid-area: a4;
-        }
-  }
-
- 
-    
-  }
-  
-  
-
-

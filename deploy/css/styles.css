@@ -431,51 +431,67 @@ header {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". header .";
+  background-color: #170149;
 }
 header > div {
   grid-area: header;
+}
+header > div h1 {
+  color: #D8D8FF;
 }
 
 /* =============
     Footer
 ============= */
 footer {
+  background-color: #170149;
+  color: #D8D8FF;
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
 }
 @media (min-width: 1200px) {
   footer {
-    grid-template-columns: auto 60% auto;
+    grid-template-columns: auto 1200px auto;
   }
 }
 footer > div {
   grid-area: footer;
 }
-
-ul {
-  grid-template-areas: "locations" "news" "icons";
-}
 @media (min-width: 768px) {
-  ul {
+  footer > div {
+    display: grid;
     grid-template-columns: 50% auto;
-    grid-template-areas: "locations news" "          icons";
+    grid-template-areas: "locations news" "locations icons";
   }
 }
 @media (min-width: 992px) {
-  ul {
-    grid-template-columns: 33.3% 33.3% 33.3%;
+  footer > div {
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "locations news icons";
   }
 }
-ul li #locations {
-  grid-area: locations;
+footer > div section ul li i {
+  color: #fff;
 }
-ul li #news {
-  grid-area: news;
+@media (min-width: 768px) {
+  footer > div #locations {
+    grid-area: locations;
+  }
 }
-ul li #icons {
-  grid-area: icons;
+footer > div #news button {
+  background-color: #535EEB;
+  color: #fff;
+}
+@media (min-width: 768px) {
+  footer > div #news {
+    grid-area: news;
+  }
+}
+@media (min-width: 768px) {
+  footer > div #icons {
+    grid-area: icons;
+  }
 }
 
 /* =============
@@ -485,6 +501,7 @@ ul li #icons {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". search .";
+  background-color: #F8F9FA;
 }
 @media (min-width: 1200px) {
   #search {
@@ -494,63 +511,99 @@ ul li #icons {
 #search > div {
   grid-area: search;
 }
+#search > div button {
+  background-color: #535EEB;
+  color: #fff;
+}
 
 /* =============
     ArticleSection
 ============= */
-#articlesection ul li img {
-  width: 100%;
-}
-#articlesection ul li section {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". articlesection .";
-}
-@media (min-width: 1200px) {
-  #articlesection ul li section {
-    grid-template-columns: auto 60% auto;
+@media (min-width: 768px) {
+  #articlesection {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". articlesection .";
   }
 }
-#articlesection ul li section > div {
-  grid-area: articlesection-content;
-}
-
-ul {
-  gap: 16px;
-  display: grid;
-  grid-area: articlesection;
-  grid-template-areas: "a1" "a2" "a3" "a4" "a5";
+@media (min-width: 1200px) {
+  #articlesection {
+    grid-template-columns: auto 1200px auto;
+  }
 }
 @media (min-width: 768px) {
-  ul {
-    grid-template-columns: 50% auto;
-    grid-template-areas: "types" "a1 a2" "a3 a4" "a5";
+  #articlesection > div {
+    grid-area: articlesection;
+  }
+}
+@media (min-width: 768px) {
+  #articlesection > div ul #types {
+    grid-area: types;
+  }
+}
+@media (min-width: 768px) {
+  #articlesection > div ul #a1 {
+    grid-area: a1;
+  }
+}
+@media (min-width: 768px) {
+  #articlesection > div ul #a2 {
+    grid-area: a2;
+  }
+}
+@media (min-width: 768px) {
+  #articlesection > div ul #a3 {
+    grid-area: a3;
+  }
+}
+@media (min-width: 768px) {
+  #articlesection > div ul #a4 {
+    grid-area: a4;
+  }
+}
+@media (min-width: 768px) {
+  #articlesection > div ul #a5 {
+    grid-area: a5;
+  }
+}
+@media (min-width: 768px) {
+  #articlesection > div ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "types . . ." "a1 a1 a2 a2" "a3 a3 a4 a4" ". a5 a5 .";
+    gap: 16px;
   }
 }
 @media (min-width: 992px) {
-  ul {
-    grid-template-columns: 33.3% 33.3% 33.3%;
-    grid-template-areas: "types" "a1 a2 a3" "a4 a5";
+  #articlesection > div ul {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "types . . . . ." "a1 a1 a2 a2 a3 a3" ". a4 a4 a5 a5 .";
   }
 }
-ul li #a1 {
-  grid-area: a1;
+#articlesection > div ul li {
+  background-color: #D8D8FF;
 }
-ul li #a2 {
-  grid-area: a2;
+#articlesection > div ul li h2 {
+  background-color: #fff;
 }
-ul li #a3 {
-  grid-area: a3;
+#articlesection > div ul li img {
+  width: 100%;
 }
-ul li #a4 {
-  grid-area: a4;
+#articlesection > div ul li section {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". articlesection-content .";
 }
-ul li #a4 {
-  grid-area: a4;
+#articlesection > div ul li section > div {
+  grid-area: articlesection-content;
+}
+#articlesection > div ul li section > div button {
+  background-color: #535EEB;
+  color: #fff;
 }
 
 /* =============
-    Lift Left
+    Lift
 ============= */
 #liftleft {
   display: grid;
@@ -566,9 +619,6 @@ ul li #a4 {
   grid-area: liftleft;
 }
 
-/* =============
-    Lift Right
-============= */
 #liftright {
   display: grid;
   grid-template-columns: 16px auto 16px;
@@ -581,40 +631,6 @@ ul li #a4 {
 }
 #liftright > div {
   grid-area: liftright;
-}
-
-/* =============
-    Hero Stripe Left
-============= */
-#herostripeleft {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". herostripeleft .";
-}
-@media (min-width: 1200px) {
-  #herostripeleft {
-    grid-template-columns: auto 60% auto;
-  }
-}
-#herostripeleft > div {
-  grid-area: herostripeleft;
-}
-
-/* =============
-    Hero Stripe Right
-============= */
-#herostriperight {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". herostriperight .";
-}
-@media (min-width: 1200px) {
-  #herostriperight {
-    grid-template-columns: auto 60% auto;
-  }
-}
-#herostriperight > div {
-  grid-area: herostriperight;
 }
 
 /* =============
@@ -634,6 +650,20 @@ ul li #a4 {
 ============= */
 #hero img {
   width: 100%;
+}
+#hero ul li {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". hero-content .";
+}
+#hero ul li a {
+  grid-area: hero-content;
+}
+#hero ul #hero-sub-1 {
+  background-color: #7C49FA;
+}
+#hero ul #hero-sub-2 {
+  background-color: #9B75F9;
 }
 
 /* =============

@@ -159,7 +159,20 @@
       "oAP" : "\/deploy\/img\/hero\/hero.jpg",
       "oF" : 0,
       "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/hero\/hero.png" : {
+      "ft" : 32768,
+      "iS" : 2820651,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/hero\/hero.png",
+      "oF" : 0,
+      "oIPL" : 0,
       "opt" : 0,
+      "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -172,7 +185,7 @@
       "oAP" : "\/deploy\/img\/hero2\/hero1.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -288,36 +301,12 @@
       "oAP" : "\/dev\/content\/hero2.html",
       "oF" : 0
     },
-    "\/dev\/content\/herostripeleft.kit" : {
+    "\/dev\/content\/Lift.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/herostripeleft.html",
-      "oF" : 0
-    },
-    "\/dev\/content\/herostriperight.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/content\/herostriperight.html",
-      "oF" : 0
-    },
-    "\/dev\/content\/LiftLeft.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/content\/LiftLeft.html",
-      "oF" : 0
-    },
-    "\/dev\/content\/LiftRight.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/content\/LiftRight.html",
+      "oAP" : "\/dev\/content\/Lift.html",
       "oF" : 0
     },
     "\/dev\/content\/search.kit" : {
@@ -571,6 +560,18 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/dev\/scss\/sections\/hero2.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/scss\/sections\/hero2-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/dev\/scss\/sections\/hero2.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -580,58 +581,6 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/scss\/sections\/hero2.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/dev\/scss\/sections\/herostripeleft.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/scss\/sections\/herostripeleft-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/dev\/scss\/sections\/herostripeleft.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/herostripeleft.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/dev\/scss\/sections\/herostriperight.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/scss\/sections\/herostriperight-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/dev\/scss\/sections\/herostriperight.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/herostriperight.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -663,7 +612,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/liftleft.scss" : {
+    "\/dev\/scss\/sections\/lift.scss" : {
       "aP" : 0,
       "bl" : 0,
       "dP" : 10,
@@ -671,33 +620,21 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/liftleft.css",
+      "oAP" : "\/dev\/scss\/sections\/lift.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/liftright.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/scss\/sections\/liftright-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/dev\/scss\/sections\/liftright.scss" : {
+    "\/dev\/scss\/sections\/search copy.scss" : {
       "aP" : 0,
       "bl" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/liftright.css",
+      "oA" : 0,
+      "oAP" : "\/dev\/scss\/sections\/search copy.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,

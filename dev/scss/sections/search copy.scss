@@ -5,17 +5,8 @@
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". search .";
-    background-color: #F8F9FA;
-
-    @include xl{
-        grid-template-columns: auto 60% auto;
-    }
 
     >div{
         grid-area: search;
-        button {
-            background-color:$discord;
-            color: $white;
     }
-}
 }

@@ -5,8 +5,13 @@ header{
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". header .";
+    background-color: $dpurple;
 
     >div{
         grid-area: header;
+            h1 {
+                color: $lavendar
+            }
+
     }
 }
