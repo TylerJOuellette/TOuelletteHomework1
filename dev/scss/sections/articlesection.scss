@@ -22,6 +22,7 @@
         ul {
 
             #types{
+                background-color: $white;
                 @include md {
                     grid-area: types;
                 }

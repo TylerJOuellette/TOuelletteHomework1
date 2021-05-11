@@ -39,6 +39,32 @@
                     background-color:$discord;
                     color: $white;
                 }
+
+                section{
+
+                }
+
+                aside{
+                    div{
+                        background-size: cover;
+                        background-position: center;
+                        border: 4px $white solid;
+                        height: 85px;
+                        width: 85px;
+                        border-radius: 100%;
+                        height: 113px;
+                        width: 113px;
+                    }
+
+                    #lift-left{
+                        background-image: url("../img/liftleft/cupcake_square.png");
+                    }
+
+                    #lift-right{
+                        background-image: url("../img/liftleft/token.jpg");
+                    }
+
+                }
             }
         }
     }
