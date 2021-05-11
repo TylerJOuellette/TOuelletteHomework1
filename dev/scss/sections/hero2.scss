@@ -6,20 +6,27 @@
    ul{
        display: grid;
        grid-template-rows: 360px 486px;
+       margin: 24px 0px 0px 0px;
 
 
        @include md{
            grid-template-columns: 50% auto;
            grid-template-rows: 625px;
+           margin: 40px 0px 0px 0px;
+
        }
 
        @include lg{
            grid-template-columns: 60% auto;
+           margin: 56px 0px 0px 0px;
+
        }
 
        @include xl{
+           
            grid-template-columns: 65% auto;
            grid-template-rows: 377px 377px;
+           margin: 64px 0px 0px 0px;
            grid-template-areas: 
            "h2-1 h2-2"
            "h2-1 h2-3";

@@ -29,6 +29,13 @@
             grid-template-columns: 16px auto 16px;
             grid-template-areas: ". lift-content .";
             background-color: $dpurple;
+            margin: 16px 0px 0px 0px;
+            padding: 16px 0px;
+
+            @include md{
+                margin: 24px 0px 0px 0px;
+                padding: 24px 0px;
+            }
 
             >div{
                 grid-area: lift-content;

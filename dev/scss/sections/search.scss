@@ -6,6 +6,16 @@
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". search .";
     background-color: #F8F9FA;
+    padding: 18px;
+
+    @include md{
+        padding: 20px 0px;
+    }
+
+    @include lg{
+        padding: 24px 0px;
+
+    }
 
     @include xl{
         grid-template-columns: auto 60% auto;
