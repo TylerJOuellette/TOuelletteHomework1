@@ -216,6 +216,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/hero2\/hero11.jpg" : {
+      "ft" : 16384,
+      "iS" : 1406610,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/hero2\/hero11.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/liftleft\/cupcake_square.png" : {
       "ft" : 32768,
       "iS" : 2491284,

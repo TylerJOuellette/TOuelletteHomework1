@@ -654,8 +654,12 @@ footer > div #news button {
   height: 85px;
   width: 85px;
   border-radius: 100%;
-  height: 113px;
-  width: 113px;
+}
+@media (min-width: 768px) {
+  #lift ul li > div aside div {
+    height: 113px;
+    width: 113px;
+  }
 }
 #lift ul li > div aside #lift-left {
   background-image: url("../img/liftleft/cupcake_square.png");
@@ -742,10 +746,12 @@ footer > div #news button {
 ============= */
 #hero2 ul {
   display: grid;
+  grid-template-rows: 360px 486px;
 }
 @media (min-width: 768px) {
   #hero2 ul {
     grid-template-columns: 50% auto;
+    grid-template-rows: 625px;
   }
 }
 @media (min-width: 992px) {
@@ -756,15 +762,27 @@ footer > div #news button {
 @media (min-width: 1200px) {
   #hero2 ul {
     grid-template-columns: 65% auto;
+    grid-template-rows: 377px 377px;
     grid-template-areas: "h2-1 h2-2" "h2-1 h2-3";
   }
 }
-#hero2 ul li img {
-  width: 100%;
+#hero2 ul li {
+  background-size: cover;
+}
+#hero2 ul #h2-1 {
+  background-image: url("../img/hero2/hero11.jpg");
 }
 @media (min-width: 1200px) {
   #hero2 ul #h2-1 {
     grid-area: h2-1;
+  }
+}
+#hero2 ul #h2-2 {
+  background-image: url("../img/hero2/hero2.jpg");
+}
+@media (min-width: 768px) {
+  #hero2 ul #h2-2 {
+    background-position: center right;
   }
 }
 @media (min-width: 1200px) {
@@ -774,6 +792,7 @@ footer > div #news button {
 }
 #hero2 ul #h2-3 {
   display: none;
+  background-image: url("../img/hero2/hero3.jpg");
 }
 @media (min-width: 1200px) {
   #hero2 ul #h2-3 {
