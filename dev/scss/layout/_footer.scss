@@ -101,6 +101,12 @@ footer{
             button {
                 background-color:$discord;
                 color: $white;
+
+                &:hover{
+                    background-color: $white;
+                    color: $discord;
+                    transition: 0.25s;
+                }
             }
             @include md{
                 grid-area: news;
@@ -109,8 +115,32 @@ footer{
         }
 
         #icons{
-            @include md{
-                grid-area: icons;
+            ul{
+                display: flex;
+                justify-content: left;
+                margin: 48px 0px;
+
+                li{
+                    margin: 0px 16px;
+                    
+                    a:link, a:visited{
+                        color: $white;
+                        transition: 0.25s;
+
+                        &:hover, &:active{
+                            color: $discord;
+                        }
+                    }
+
+
+                    @include md{
+                        margin: 0px 24px;
+                    }
+                }
             }
+            
+            // @include md{
+            //     grid-area: icons;
+            // }
         }
     }

@@ -53,6 +53,12 @@
         button {
             background-color:$discord;
             color: $white;
+
+            &:hover{
+                background-color: $white;
+                color: $discord;
+                transition: 0.25s;
+            }
     }
 }
 }
