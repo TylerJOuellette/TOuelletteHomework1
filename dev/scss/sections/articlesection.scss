@@ -23,36 +23,85 @@
 
             #types{
                 background-color: $white;
+                h2{
+                    font-size: rem-calc(20);
+                    font-weight: 300;
+
+                    @include lg{
+                        font-size: rem-calc(37);
+                    }
+                }
                 @include md {
                     grid-area: types;
                 }
               }
             
             #a1{
+                h3{
+                    font-size: rem-calc(27);
+                    font-weight: 700; 
+                }
+                p{
+                    font-size: rem-calc(16);
+                    font-weight: 400; 
+                }
+                
                 @include md {
                     grid-area: a1;
                 }
               }
               
               #a2{
+                h3{
+                    font-size: rem-calc(27);
+                    font-weight: 700; 
+                }
+                p{
+                    font-size: rem-calc(16);
+                    font-weight: 400; 
+                }
                 @include md {
                     grid-area: a2;
                 }
               }
               
               #a3{
+                h3{
+                    font-size: rem-calc(27);
+                    font-weight: 700; 
+                }
+                p{
+                    font-size: rem-calc(16);
+                    font-weight: 400; 
+                }
                 @include md {
                     grid-area: a3;
                 }
               }
               
               #a4{
+                h3{
+                    font-size: rem-calc(27);
+                    font-weight: 700; 
+                }
+                p{
+                    font-size: rem-calc(16);
+                    font-weight: 400; 
+                }
                 @include md {
                     grid-area: a4;
                 }
               }
               
               #a5{
+                h3{
+                    font-size: rem-calc(27);
+                    font-weight: 700; 
+                }
+                p{
+                    font-size: rem-calc(16);
+                    font-weight: 400; 
+                }
                 @include md {
                     grid-area: a5;
                 }

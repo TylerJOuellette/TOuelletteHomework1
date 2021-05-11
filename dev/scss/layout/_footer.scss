@@ -42,6 +42,41 @@ footer{
             }
         }
 
+        h4{
+            font-size: rem-calc(20);
+            font-weight: 700; 
+        }
+        h5{
+            font-size: rem-calc(16);
+            font-weight: 700; 
+        }
+        p{
+            font-size: rem-calc(12);
+            font-weight: 400; 
+        }
+
+        form{
+            input{  
+                font-size: rem-calc(14);
+                font-weight: 600;
+                color: $dpurple;
+
+                &::placeholder {
+                    color: $dpurple;
+                    opacity: 1;
+                }
+
+                &:-ms-input-placeholder {
+                    color: $dpurple;
+                }
+
+                &::-ms-input-placeholder {
+                    color: $dpurple;
+                }
+            }
+         }
+    }
+
         #locations{
             @include md{
                 grid-area: locations;
@@ -65,4 +100,3 @@ footer{
             }
         }
     }
-}

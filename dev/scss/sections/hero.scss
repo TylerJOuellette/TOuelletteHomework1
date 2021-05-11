@@ -37,9 +37,19 @@
             background-color: $spurple;
             p{
                 color: $white;
+                font-size: rem-calc(16);
+                font-weight: 400;
             }
             h4{
                 color: $white;
+                font-size: rem-calc(18);
+                font-weight: 700;
+
+                @include lg{
+                    font-size: rem-calc(25);
+                }
+                    }
+                }
             }
             i{
                 color: $white;
@@ -51,9 +61,17 @@
             background-color: $purple;
             p{
                 color: $white;
+                font-size: rem-calc(16);
+                font-weight: 400;
             }
             h4{
                 color: $white;
+                font-size: rem-calc(18);
+                font-weight: 700;
+
+                @include lg{
+                    font-size: rem-calc(25);
+                }
             }
             i{
                 color: $white;
@@ -62,5 +80,3 @@
                 grid-template-columns: 16px 480px auto;
             }
         }
-    }
-}

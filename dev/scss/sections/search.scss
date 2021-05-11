@@ -13,6 +13,33 @@
 
     >div{
         grid-area: search;
+        
+        form{
+            input{
+
+                @include md{
+                    // 16px = 1em
+                    // 1em = 1 rem
+                    
+                    font-size: rem-calc(30);
+                    font-weight: 100;
+                    color: $dpurple;
+
+                    &::placeholder {
+                        color: $dpurple;
+                        opacity: 1;
+                    }
+
+                    &:-ms-input-placeholder {
+                        color: $dpurple;
+                    }
+
+                    &::-ms-input-placeholder {
+                        color: $dpurple;
+                    }
+                }
+            }
+        }
         button {
             background-color:$discord;
             color: $white;
