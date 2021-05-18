@@ -1,146 +1,117 @@
 /* =============
     Footer
 ============= */
-footer{
-    background-color: $dpurple;
-    color: $lavendar;
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". footer .";
-    margin: 24px 0px 0px 0px;
-    padding: 18px 0px;
-
-
-    @include md{
-        margin: 38px 0px 0px 0px;
-        padding: 30px 0px;
-    }
-
-    @include lg{
-        margin: 56px 0px 0px 0px;
-        padding: 48px 0px;
-    }
-
-    @include xl{
-        margin: 64px 0px 0px 0px;
-        grid-template-columns: auto 1200px auto;
-    }
-
-    >div {
-        grid-area: footer;
-        
-      
-
-        @include md{
-            display: grid;
-            grid-template-columns: 50% auto;
-            grid-template-areas: 
-            "locations news"
-            "locations icons";
-        }
-
-        @include lg{
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-areas: 
-            "locations news icons";
-        }
-
-        section{
-
-            ul{
-                li{
-                    i{
-                        color: $white
-                    }
-                }
-            }
-        }
-
-        h4{
-            font-size: rem-calc(20);
-            font-weight: 700; 
-        }
-        h5{
-            font-size: rem-calc(16);
-            font-weight: 700; 
-        }
-        p{
-            font-size: rem-calc(12);
-            font-weight: 400; 
-        }
-
-        form{
-            input{  
-                font-size: rem-calc(14);
-                font-weight: 600;
-                color: $dpurple;
-
-                &::placeholder {
-                    color: $dpurple;
-                    opacity: 1;
-                }
-
-                &:-ms-input-placeholder {
-                    color: $dpurple;
-                }
-
-                &::-ms-input-placeholder {
-                    color: $dpurple;
-                }
-            }
-         }
-    }
-
-        #locations{
-            @include md{
-                grid-area: locations;
-            }
-        }
-          
-        #news{
-            button {
-                background-color:$discord;
-                color: $white;
-
-                &:hover{
-                    background-color: $white;
-                    color: $discord;
-                    transition: 0.25s;
-                }
-            }
-            @include md{
-                grid-area: news;
-                
-            }
-        }
-
-        #icons{
-            ul{
-                display: flex;
-                justify-content: left;
-                margin: 48px 0px;
-
-                li{
-                    margin: 0px 16px;
-                    
-                    a:link, a:visited{
-                        color: $white;
-                        transition: 0.25s;
-
-                        &:hover, &:active{
-                            color: $discord;
-                        }
-                    }
-
-
-                    @include md{
-                        margin: 0px 24px;
-                    }
-                }
-            }
-            
-            // @include md{
-            //     grid-area: icons;
-            // }
-        }
-    }
+footer {
+	background-color: $dpurple;
+	color: $lavendar;
+	display: grid;
+	grid-template-areas: ". footer .";
+	grid-template-columns: 16px auto 16px;
+	margin: 24px 0px 0px 0px;
+	padding: 18px 0px;
+	@include md {
+		margin: 38px 0px 0px 0px;
+		padding: 30px 0px;
+	}
+	@include lg {
+		margin: 56px 0px 0px 0px;
+		padding: 48px 0px;
+	}
+	@include xl {
+		grid-template-columns: auto 1200px auto;
+		margin: 64px 0px 0px 0px;
+	}
+	>div {
+		grid-area: footer;
+		@include md {
+			display: grid;
+			grid-template-areas: "locations news"
+                "locations icons";
+			grid-template-columns: 50% auto;
+		}
+		@include lg {
+			grid-template-areas: "locations news icons";
+			grid-template-columns: repeat(3, 1fr);
+		}
+		section {
+			ul {
+				li {
+					i {
+					}
+				}
+			}
+		}
+		h4 {
+			font-size: rem-calc(20);
+			font-weight: 700;
+		}
+		h5 {
+			font-size: rem-calc(16);
+			font-weight: 700;
+		}
+		p {
+			font-size: rem-calc(12);
+			font-weight: 400;
+		}
+		form {
+			input {
+				color: $dpurple;
+				font-size: rem-calc(14);
+				font-weight: 600;
+				&::placeholder {
+					color: $dpurple;
+					opacity: 1;
+				}
+				&:-ms-input-placeholder {
+					color: $dpurple;
+				}
+				&::-ms-input-placeholder {
+					color: $dpurple;
+				}
+			}
+		}
+	}
+	#locations {
+		@include md {
+			grid-area: locations;
+		}
+	}
+	#news {
+		button {
+			background-color: $discord;
+			color: $white;
+			&:hover {
+				background-color: $white;
+				color: $discord;
+				transition: 0.25s;
+			}
+		}
+		@include md {
+			grid-area: news;
+		}
+	}
+	#icons {
+		ul {
+			display: flex;
+			justify-content: left;
+			margin: 48px 0px;
+			li {
+				margin: 0px 16px;
+				a:link,
+                a:visited {
+					color: $white;
+					transition: 0.25s;
+					&:hover,
+                    &:active {
+						color: $discord;
+					}
+				}
+				@include md {
+					margin: 0px 24px;
+				}
+			}
+		}
+		// @include md {
+			//     grid-area: icons;
+		}
+	}

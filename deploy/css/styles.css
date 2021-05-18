@@ -560,8 +560,8 @@ footer {
   background-color: #170149;
   color: #D8D8FF;
   display: grid;
-  grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
+  grid-template-columns: 16px auto 16px;
   margin: 24px 0px 0px 0px;
   padding: 18px 0px;
 }
@@ -579,8 +579,8 @@ footer {
 }
 @media (min-width: 1200px) {
   footer {
-    margin: 64px 0px 0px 0px;
     grid-template-columns: auto 1200px auto;
+    margin: 64px 0px 0px 0px;
   }
 }
 footer > div {
@@ -589,18 +589,15 @@ footer > div {
 @media (min-width: 768px) {
   footer > div {
     display: grid;
-    grid-template-columns: 50% auto;
     grid-template-areas: "locations news" "locations icons";
+    grid-template-columns: 50% auto;
   }
 }
 @media (min-width: 992px) {
   footer > div {
-    grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "locations news icons";
+    grid-template-columns: repeat(3, 1fr);
   }
-}
-footer > div section ul li i {
-  color: #fff;
 }
 footer > div h4 {
   font-size: 1.25rem;
@@ -615,9 +612,9 @@ footer > div p {
   font-weight: 400;
 }
 footer > div form input {
+  color: #170149;
   font-size: 0.875rem;
   font-weight: 600;
-  color: #170149;
 }
 footer > div form input::placeholder {
   color: #170149;
@@ -656,11 +653,14 @@ footer #icons ul {
 footer #icons ul li {
   margin: 0px 16px;
 }
-footer #icons ul li a:link, footer #icons ul li a:visited {
+footer #icons ul li a:link,
+footer #icons ul li a:visited {
   color: #fff;
   transition: 0.25s;
 }
-footer #icons ul li a:link:hover, footer #icons ul li a:link:active, footer #icons ul li a:visited:hover, footer #icons ul li a:visited:active {
+footer #icons ul li a:link:hover, footer #icons ul li a:link:active,
+footer #icons ul li a:visited:hover,
+footer #icons ul li a:visited:active {
   color: #535EEB;
 }
 @media (min-width: 768px) {
