@@ -1,64 +1,57 @@
 /* =============
     Search
 ============= */
-#search{
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". search .";
-    background-color: #F8F9FA;
-    padding: 18px;
+#search {
+	background-color: #F8F9FA;
+	display: grid;
+	grid-template-areas: ". search .";
+	grid-template-columns: 16px auto 16px;
+	padding: 18px;
+    margin-top: 105px;
 
-    @include md{
-        padding: 20px 0px;
-    }
-
-    @include lg{
-        padding: 24px 0px;
-
-    }
-
-    @include xl{
-        grid-template-columns: auto 60% auto;
-    }
-
-    >div{
-        grid-area: search;
-        
-        form{
-            input{
-
-                @include md{
-                    // 16px = 1em
+	@include md {
+		padding: 20px 0px;
+        padding: 120px;
+	}
+	@include lg {
+		padding: 24px 0px;
+        margin-top: 135px;
+	}
+	@include xl {
+		grid-template-columns: auto 60% auto;
+	}
+	>div {
+		grid-area: search;
+		form {
+			input {
+				@include md {
+					// 16px = 1em
                     // 1em = 1 rem
-                    
+
                     font-size: rem-calc(30);
-                    font-weight: 100;
-                    color: $dpurple;
-
-                    &::placeholder {
-                        color: $dpurple;
-                        opacity: 1;
-                    }
-
-                    &:-ms-input-placeholder {
-                        color: $dpurple;
-                    }
-
-                    &::-ms-input-placeholder {
-                        color: $dpurple;
-                    }
-                }
-            }
-        }
-        button {
-            background-color:$discord;
-            color: $white;
-
-            &:hover{
-                background-color: $white;
-                color: $discord;
-                transition: 0.25s;
-            }
-    }
-}
+					color: $dpurple;
+					font-weight: 100;
+					&::placeholder {
+						color: $dpurple;
+						opacity: 1;
+					}
+					&:-ms-input-placeholder {
+						color: $dpurple;
+					}
+					&::-ms-input-placeholder {
+						color: $dpurple;
+					}
+				}
+			}
+		}
+		button {
+			background-color: $discord;
+			color: $white;
+			&:hover {
+				background-color: $white;
+				color: $discord;
+				transition: 0.25s;
+			}
+		}
+	}
 }

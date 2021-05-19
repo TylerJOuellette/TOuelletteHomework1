@@ -19,7 +19,7 @@
 
             @include lg {
                 align-items: center;
-                border-right: 2px solid $white;
+                border-right: 2px solid $purple;
                 display: flex;
                 margin-bottom: 0px;
             }
@@ -31,6 +31,7 @@
                 padding: 0 20px;
                 text-decoration: none;
                 transition: 0.25s;
+
                 @include lg {
                     color: $purple;
                 }

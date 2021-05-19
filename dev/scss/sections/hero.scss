@@ -1,95 +1,79 @@
 /* =============
     Hero
 ============= */
-
-#hero{
-    img{
+#hero {
+	img {
+		display: block;
         object-fit: cover;
-        width: 100%;
-    }
-
-    ul{
-        
-        @include md{
-            display: grid;
-            grid-template-columns: 40% auto;
-        }
-
-        @include lg{
-            grid-template-columns: 50% auto;
-        }
-
-        li{
-            display: grid;
-            grid-template-columns: 16px auto 16px;
-            grid-template-areas: ". hero-content .";
-
-            @include xl{
-                grid-template-columns: auto 480px 16px;
-            }
-
-            a{
-                grid-area: hero-content;
-            }
-        }
-
-        #hero-sub-1{
-            background-color: $spurple;
-            padding: 16px 0px;
-
-            @include md{
-                padding: 24px 0px;
-            }
-
-            p{
-                color: $white;
-                font-size: rem-calc(16);
-                font-weight: 400;
-            }
-            h4{
-                color: $white;
-                font-size: rem-calc(18);
-                font-weight: 700;
-
-                @include lg{
-                    font-size: rem-calc(25);
-                }
-                    }
-                }
-            }
-            i{
-                color: $white;
-            }
-            
-        }
-
-        #hero-sub-2{
-            background-color: $purple;
-            padding: 16px 0px 32px 0px;
-
-            @include md{
-                padding: 24px 0px;
-            }
-
-
-            p{
-                color: $white;
-                font-size: rem-calc(16);
-                font-weight: 400;
-            }
-            h4{
-                color: $white;
-                font-size: rem-calc(18);
-                font-weight: 700;
-
-                @include lg{
-                    font-size: rem-calc(25);
-                }
-            }
-            i{
-                color: $white;
-            }
-            @include xl{
-                grid-template-columns: 16px 480px auto;
-            }
-        }
+		width: 100%;
+	}
+	ul {
+		@include md {
+			display: grid;
+			grid-template-columns: 40% auto;
+		}
+		@include lg {
+			grid-template-columns: 50% auto;
+		}
+		li {
+			display: grid;
+			grid-template-areas: ". hero-content .";
+			grid-template-columns: 16px auto 16px;
+			@include xl {
+				grid-template-columns: auto 480px 16px;
+			}
+			a {
+				grid-area: hero-content;
+			}
+		}
+		#hero-sub-1 {
+			background-color: $spurple;
+			padding: 16px 0px;
+			@include md {
+				padding: 24px 0px;
+			}
+			p {
+				color: $white;
+				font-size: rem-calc(16);
+				font-weight: 400;
+			}
+			h4 {
+				color: $white;
+				font-size: rem-calc(18);
+				font-weight: 700;
+				@include lg {
+					font-size: rem-calc(25);
+				}
+			}
+		}
+	}
+	i {
+		color: $white;
+	}
+}
+#hero-sub-2 {
+	background-color: $purple;
+	padding: 16px 0px 32px 0px;
+	@include md {
+		padding: 24px 0px;
+	}
+	p {
+		color: $white;
+		font-size: rem-calc(16);
+		font-weight: 400;
+	}
+	h4 {
+		color: $white;
+		font-size: rem-calc(18);
+		font-weight: 700;
+		@include lg {
+			font-size: rem-calc(25);
+		}
+	}
+	i {
+		color: $white;
+	}
+	@include xl {
+		grid-template-columns: 16px 480px auto;
+	}
+}

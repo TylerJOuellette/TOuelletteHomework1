@@ -1,85 +1,158 @@
 /* =============
     Header
 ============= */
-header{
-    border: 1px solid red;
+// header {
+// 	border: 1px solid red;
+// 	left: 0;
+// 	position: fixed;
+// 	top: 0;
+// 	width: 100%;
+// 	>div {
+// 		background-color: $dpurple;
+// 		display: grid;
+// 		grid-template-areas: "logo burger"
+//             "nav nav";
+// 		grid-template-columns: 20% auto;
+// 		@include lg {
+// 			grid-template-areas: "logo nav";
+// 			grid-template-columns: 20% auto;
+// 		}
+// 		#logo-container {
+// 			background-color: $dpurple;
+// 			grid-area: logo;
+// 			padding: 16px;
+// 			a:link,
+//             a:visited {
+// 				//     background-color: $discord;
+// 				//     border: none;
+// 				//     border-radius: 23px;
+// 				//     color: $white;
+// 				//     display: inline-block;
+// 				//     font-size: rem-calc(18);
+// 				//     font-weight: 400;
+// 				//     padding: 16px 20px;
+// 				transition: 0.25s;
+// 				//     &:hover {
+// 					//         background-color: $white;
+// 					//         color: $discord;
+// 				}
+// 			}
+// 		}
+// 		#burger-container {
+// 			align-items: center;
+// 			background-color: $dpurple;
+// 			display: flex;
+// 			grid-area: burger;
+// 			padding: 16px;
+// 			@include lg {
+// 				display: none !important;
+// 			}
+// 			i {
+// 				color: $white;
+// 				cursor: pointer;
+// 				font-size: rem-calc (30);
+// 				margin-left: auto;
+// 			}
+// 		}
+// 		#nav-container {
+// 			background-color: $dpurple;
+// 			grid-area: nav;
+// 			padding: 20px 16px 16px;
+// 			@include lg {
+// 				background-color: $dpurple;
+// 				display: block !important;
+// 			}
+// 		}
+// 	}
+
+header {
+    background-color: $dpurple;
     left: 0;
     position: fixed;
     top: 0;
     width: 100%;
+    // display: grid;
+    // grid-template-columns: 16px auto 16px;
+    // grid-template-areas: ". header .";
+    // padding: 21px 0;
+
+
+    @include md{
+        padding: 24px 0;
+    }
+
+    @include lg{
+        padding: 16px 0;
+    }
 
     >div {
-        background-color: $dpurple;
         display: grid;
         grid-template-areas: 
         "logo burger"
         "nav nav";
         grid-template-columns: 20% auto;
-
-        
+        grid-area: header;
+        // border: 1px solid red;
 
         @include lg {
             grid-template-areas: "logo nav";
             grid-template-columns: 20% auto;
         }
 
+        // @include xl{
+        //     grid-area: header;
+        // }
+
         #logo-container {
             grid-area: logo;
-            padding: 16px;
-            background-color: $dpurple;
+            padding: 10px;
+            // border: 1px solid green;
 
-
-            a:link, a:visited {
-            //     background-color: $discord;
-            //     border-radius: 23px;
-            //     color: $white;
-            //     display: inline-block;
-            //     font-size: rem-calc(18);
-            //     font-weight: 400;
-            //     padding: 16px 20px;
-            //     border: none;
+           a:link, a:visited {
                 transition: 0.25s;
 
-            //     &:hover {
-            //         background-color: $white;
-            //         color: $discord;
-            //     }
-            // }
+                &:hover {
+                }
+            }
+
+            
         }
 
         #burger-container {
             align-items: center;
             display: flex;
             grid-area: burger;
-            padding: 16px;
-            background-color: $dpurple;
-
+            padding: 10px;
 
             @include lg {
-                display: none!important;
+                display: none !important;
             }
 
             i {
                 margin-left: auto;
                 cursor: pointer;
-                font-size: rem-calc (30);
+                font-size: rem-calc(30);
                 color: $white;
-                
-
             }
         }
 
         #nav-container {
+            // border: 1px solid blue;
             background-color: $dpurple;
+            display: none;
             grid-area: nav;
-            padding: 20px 16px 16px;
+            padding: 20px 10px 10px;
+            // height: 100vh;
+
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+
 
             @include lg {
                 background-color: $dpurple;
                 display: block !important;
             }
         }
-
     }
-}
 }

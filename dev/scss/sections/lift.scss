@@ -1,100 +1,82 @@
 /* =============
     Lift
 ============= */
-#lift{
+#lift {
     
-    @include md{
-        display: grid;
-        grid-template-columns: 16px auto 16px;
-        grid-template-areas: ". lift .";
-    }
-
-    @include xl{
-        grid-template-columns: auto 1000px auto;
-    }
-
-    ul{
-
-        display: grid;
-        gap: 16px;
-
-        @include md{
-            grid-template-columns: 50% auto;
-            gap: 24px;
-            grid-area: lift;
-        }
-
-        li{
-            display: grid;
-            grid-template-columns: 16px auto 16px;
-            grid-template-areas: ". lift-content .";
-            background-color: $dpurple;
-            margin: 16px 0px 0px 0px;
-            padding: 16px 0px;
-
-            @include md{
-                margin: 24px 0px 0px 0px;
-                padding: 24px 0px;
-            }
-
-            >div{
-                grid-area: lift-content;
-                h3 {
-                    color: $white;
-                }
-                button {
-                    background-color:$discord;
-                    color: $white;
-
-                    &:hover{
-                        background-color: $white;
-                        color: $discord;
-                        transition: 0.25s;
-                    }
-                }
-
-                section{
-                    h3{
-                        font-size: rem-calc(22);
-                        font-weight: 400;
-
-                        @include md{
-                            font-size: rem-calc(29);
-                        }
-
-                        @include lg{
-                            font-size: rem-calc(31);
-                        }
-                    }
-                }
-
-                aside{
-                    div{
-                        background-size: cover;
-                        background-position: center;
-                        border: 4px $white solid;
-                        height: 85px;
-                        width: 85px;
-                        border-radius: 100%;
-                        
-                        @include md{
-                            height: 113px;
-                            width: 113px;
-                        }
-                    }
-
-                    #lift-left{
-                        background-image: url("../img/liftleft/cupcake_square.png");
-                    }
-
-                    #lift-right{
-                        background-image: url("../img/liftleft/token.jpg");
-                    }
-
-                }
-            }
-        }
-    }
-
+	@include md {
+		display: grid;
+		grid-template-areas: ". lift .";
+		grid-template-columns: 16px auto 16px;
+	}
+	@include xl {
+		grid-template-columns: auto 1000px auto;
+	}
+	ul {
+		display: grid;
+		gap: 16px;
+		@include md {
+			gap: 24px;
+			grid-area: lift;
+			grid-template-columns: 50% auto;
+		}
+		li {
+			background-color: $dpurple;
+			display: grid;
+			grid-template-areas: ". lift-content .";
+			grid-template-columns: 16px auto 16px;
+			margin: 16px 0px 0px 0px;
+			padding: 16px 0px;
+			@include md {
+				margin: 24px 0px 0px 0px;
+				padding: 24px 0px;
+			}
+			>div {
+				grid-area: lift-content;
+				h3 {
+					color: $white;
+				}
+				button {
+					background-color: $discord;
+					color: $white;
+					&:hover {
+						background-color: $white;
+						color: $discord;
+						transition: 0.25s;
+					}
+				}
+				section {
+					h3 {
+						font-size: rem-calc(22);
+						font-weight: 400;
+						@include md {
+							font-size: rem-calc(29);
+						}
+						@include lg {
+							font-size: rem-calc(31);
+						}
+					}
+				}
+				aside {
+					div {
+						background-position: center;
+						background-size: cover;
+						border: 4px $white solid;
+						border-radius: 100%;
+						height: 85px;
+						width: 85px;
+						@include md {
+							height: 113px;
+							width: 113px;
+						}
+					}
+					#lift-left {
+						background-image: url("../img/liftleft/cupcake_square.png");
+					}
+					#lift-right {
+						background-image: url("../img/liftleft/token.jpg");
+					}
+				}
+			}
+		}
+	}
 }
-
